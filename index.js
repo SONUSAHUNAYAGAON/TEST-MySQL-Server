@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 8080;
 
 // MySQL Connection
 const db = mysql.createConnection({
-  // host: process.env.DB_HOST,
+  host: process.env.DB_HOST,
   socketPath: `/cloudsql/midyear-arcade-448215-b1:asia-south1:sonumysqltest3715`, // Replace with your instance connection name
   user: process.env.DB_USER,
   password: process.env.DB_PASSWORD,
